@@ -6,45 +6,45 @@ from .nodes.extra import CleanVRAMPassthrough, PrintPassthrough
 
 NODE_CLASS_MAPPINGS = {
     # Values
-    "WzInt": WzInt,
-    "WzFloat": WzFloat,
-    "WzStr": WzStr,
-    "WzBool": WzBool,
+    "ZeugInt": WzInt,
+    "ZeugFloat": WzFloat,
+    "ZeugStr": WzStr,
+    "ZeugBool": WzBool,
     # Convert
-    "WzStrToInt": StringToInt,
-    "WzIntToStr": IntToString,
-    "WzFloatToStr": FloatToString,
-    "WzStrToFloat": StringToFloat,
-    "WzIntToWxH": IntToWxH,
-    "WzWxHToInt": WxHToInt,
+    "ZeugStrToInt": StringToInt,
+    "ZeugIntToStr": IntToString,
+    "ZeugFloatToStr": FloatToString,
+    "ZeugStrToFloat": StringToFloat,
+    "ZeugIntToWxH": IntToWxH,
+    "ZeugWxHToInt": WxHToInt,
     # Transform
-    "WzSplitStrList": SplitString,
-    "WzJoinStrList": JoinStrings,
-    "WzJoinStr": JoinTwoStrings,
+    "ZeugSplitStrList": SplitString,
+    "ZeugJoinStrList": JoinStrings,
+    "ZeugJoinStr": JoinTwoStrings,
     # Extra
-    "WzCleanGpuPass": CleanVRAMPassthrough,
-    "WzPrintPass": PrintPassthrough,
+    "ZeugCleanGpuPass": CleanVRAMPassthrough,
+    "ZeugPrintPass": PrintPassthrough,
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
 NODE_DISPLAY_NAME_MAPPINGS = {
     # Values
-    "WzInt": "Int",
-    "WzFloat": "Float",
-    "WzStr": "String",
-    "WzBool": "Bool",
+    "ZeugInt": "Int",
+    "ZeugFloat": "Float",
+    "ZeugStr": "String",
+    "ZeugBool": "Bool",
     # Convert
-    "WzStrToInt": "String to Int",
-    "WzIntToStr": "Int to String",
-    "WzFloatToStr": "Float to String",
-    "WzStrToFloat": "String to Float",
-    "WzIntToWxH": "Int to WidthHeight Tuple",
-    "WzWxHToInt": "WidthHeight Tuple to Int",
+    "ZeugStrToInt": "String to Int",
+    "ZeugIntToStr": "Int to String",
+    "ZeugFloatToStr": "Float to String",
+    "ZeugStrToFloat": "String to Float",
+    "ZeugIntToWxH": "Int to WidthHeight Tuple",
+    "ZeugWxHToInt": "WidthHeight Tuple to Int",
     # Transform
-    "WzSplitStrList": "Split String to List",
-    "WzJoinStrList": "Join Strings List",
-    "WzJoinStr": "Join Strings",
+    "ZeugSplitStrList": "Split String to List",
+    "ZeugJoinStrList": "Join Strings List",
+    "ZeugJoinStr": "Join Strings",
     # Extra
-    "WzCleanGpuPass": "Clean GPU",
-    "WzPrintPass": "Print",
+    "ZeugCleanGpuPass": "Clean GPU",
+    "ZeugPrintPass": "Print",
 }
