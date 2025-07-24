@@ -2,8 +2,6 @@
 
 comfyui-zeug (German for "gear" or "stuff") is a collection of custom nodes for ComfyUI, designed to provide missing features and improve usability. It includes various utility nodes which make it easier to work with data and perform common tasks e.g. specifying width and height tuples, passthrough logging, and more.
 
----
-
 ## Installation
 #### Manual
 1. Clone the repository into your ComfyUI custom nodes directory (e.g. `D:\comfyui\custom_nodes`):
