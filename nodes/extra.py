@@ -33,6 +33,15 @@ class PrintPassthrough:
     FUNCTION = "print_pass"
     CATEGORY = "werkzeug/extra"
 
+    @classmethod
+    def VALIDATE_INPUTS(cls, input_types):
+        # Get the actual type of the input
+        input_type = input_types.get("input")
+        if input_type is not None:
+            # Update RETURN_TYPES to match the input type
+            cls.RETURN_TYPES = (input_type,)
+        return True
+
     def print_pass(self, input, prefix, message):
         print(f"{prefix}{message}")
         return (input,)
