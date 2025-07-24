@@ -14,6 +14,30 @@ class AlwaysEqualProxy(str):
 any_type = AlwaysEqualProxy("*")
 
 
+class PrintPassthrough:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "input": (any_type, {}),
+                "prefix": ("STRING", {"default": ""}),
+                "message": ("STRING", {"default": "", "multiline": False}),
+            }
+        }
+
+    RETURN_TYPES = (any_type,)
+    RETURN_NAMES = ("output",)
+
+    OUTPUT_NODE = True
+
+    FUNCTION = "print_pass"
+    CATEGORY = "werkzeug/extra"
+
+    def print_pass(self, input, prefix, message):
+        print(f"{prefix}{message}")
+        return (input,)
+
+
 class CleanVRAMPassthrough:
     @classmethod
     def INPUT_TYPES(cls):

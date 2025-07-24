@@ -85,6 +85,14 @@ string output
 
 # Extra
 
+### Print (WzPrintPass)
+3 in => 1 out
+any input
+prefix string widget input (default "")
+message string widget input
+any output
+> Prints prefix+message to the console. pass through the input unchanged.
+
 ### Clean GPU (WzCleanGpuPass)
 1 in => 1 out
 any input

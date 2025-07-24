@@ -1,7 +1,7 @@
 from .nodes.values import WzInt, WzFloat, WzStr, WzBool
 from .nodes.convert import StringToInt, IntToString, FloatToString, StringToFloat, IntToWxH, WxHToInt
 from .nodes.transform import SplitString, JoinStrings, JoinTwoStrings
-from .nodes.extra import CleanVRAMPassthrough
+from .nodes.extra import CleanVRAMPassthrough, PrintPassthrough
 
 
 NODE_CLASS_MAPPINGS = {
@@ -23,6 +23,7 @@ NODE_CLASS_MAPPINGS = {
     "WzJoinStr": JoinTwoStrings,
     # Extra
     "WzCleanGpuPass": CleanVRAMPassthrough,
+    "WzPrintPass": PrintPassthrough,
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
@@ -45,4 +46,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "WzJoinStr": "Join Strings",
     # Extra
     "WzCleanGpuPass": "Clean GPU",
+    "WzPrintPass": "Print",
 }
