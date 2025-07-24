@@ -16,7 +16,7 @@ class SplitString:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("strings",)
     FUNCTION = "split_string"
-    CATEGORY = "werkzeug/transform"
+    CATEGORY = "zeug/transform"
     OUTPUT_IS_LIST = (True,)
 
     def split_string(self, text, delimiter, strip_whitespace):
@@ -46,7 +46,7 @@ class JoinStrings:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "join_strings"
-    CATEGORY = "werkzeug/transform"
+    CATEGORY = "zeug/transform"
     INPUT_IS_LIST = True
 
     def join_strings(self, strings, delimiter):
@@ -76,7 +76,7 @@ class JoinTwoStrings:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("string",)
     FUNCTION = "join_two_strings"
-    CATEGORY = "werkzeug/transform"
+    CATEGORY = "zeug/transform"
 
     def join_two_strings(self, string_a, string_b, delimiter):
         result = string_a + delimiter + string_b

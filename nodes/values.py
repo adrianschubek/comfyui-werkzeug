@@ -14,7 +14,7 @@ class WzInt:
     RETURN_TYPES = ("INT",)
     RETURN_NAMES = ("int",)
     FUNCTION = "int_value"
-    CATEGORY = "werkzeug/values"
+    CATEGORY = "zeug/values"
 
     def int_value(self, value):
         return (value,)
@@ -36,7 +36,7 @@ class WzFloat:
     RETURN_TYPES = ("FLOAT",)
     RETURN_NAMES = ("float",)
     FUNCTION = "float_value"
-    CATEGORY = "werkzeug/values"
+    CATEGORY = "zeug/values"
 
     def float_value(self, value):
         return (value,)
@@ -58,7 +58,7 @@ class WzStr:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("string",)
     FUNCTION = "string_value"
-    CATEGORY = "werkzeug/values"
+    CATEGORY = "zeug/values"
 
     def string_value(self, value):
         return (value,)
@@ -80,7 +80,7 @@ class WzBool:
     RETURN_TYPES = ("BOOLEAN",)
     RETURN_NAMES = ("bool",)
     FUNCTION = "bool_value"
-    CATEGORY = "werkzeug/values"
+    CATEGORY = "zeug/values"
 
     def bool_value(self, value):
         return (value,)

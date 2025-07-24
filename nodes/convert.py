@@ -13,7 +13,7 @@ class StringToInt:
 
     RETURN_TYPES = ("INT",)
     FUNCTION = "string_to_int"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def string_to_int(self, text):
         try:
@@ -40,7 +40,7 @@ class IntToString:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("string",)
     FUNCTION = "int_to_string"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def int_to_string(self, value):
         return (str(value),)
@@ -62,7 +62,7 @@ class FloatToString:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("string",)
     FUNCTION = "float_to_string"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def float_to_string(self, value):
         return (str(value),)
@@ -84,7 +84,7 @@ class StringToFloat:
     RETURN_TYPES = ("FLOAT",)
     RETURN_NAMES = ("float",)
     FUNCTION = "string_to_float"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def string_to_float(self, text):
         try:
@@ -109,10 +109,10 @@ class IntToWxH:
             },
         }
 
-    RETURN_TYPES = ("WzWxH",)
+    RETURN_TYPES = ("WxH",)
     RETURN_NAMES = ("wxh",)
     FUNCTION = "int_to_wxh"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def int_to_wxh(self, width, height):
         return ((width, height),)
@@ -127,14 +127,14 @@ class WxHToInt:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "wxh": ("WzWxH", {}),
+                "wxh": ("WxH", {}),
             },
         }
 
     RETURN_TYPES = ("INT", "INT")
     RETURN_NAMES = ("width", "height")
     FUNCTION = "wxh_to_int"
-    CATEGORY = "werkzeug/convert"
+    CATEGORY = "zeug/convert"
 
     def wxh_to_int(self, wxh):
         width, height = wxh

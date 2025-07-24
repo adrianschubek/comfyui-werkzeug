@@ -31,7 +31,7 @@ class PrintPassthrough:
     OUTPUT_NODE = True
 
     FUNCTION = "print_pass"
-    CATEGORY = "werkzeug/extra"
+    CATEGORY = "zeug/extra"
 
     @classmethod
     def VALIDATE_INPUTS(cls, input_types):
@@ -62,7 +62,7 @@ class CleanVRAMPassthrough:
     OUTPUT_NODE = True
 
     FUNCTION = "clean_vram"
-    CATEGORY = "werkzeug/extra"
+    CATEGORY = "zeug/extra"
 
     def clean_vram(self, input):
         print("Cleaning VRAM...")
