@@ -1,6 +1,6 @@
-# comfyui-werkzeug
+# comfyui-zeug
 
-comfyui-werkzeug (German for "tool") is a collection of custom nodes for ComfyUI, designed to enhance functionality and provide additional features.
+comfyui-zeug (German for "gear" or "stuff") is a collection of custom nodes for ComfyUI, designed to enhance functionality and provide additional features.
 
 <!-- internal node prefix name `Wz` -->
 
